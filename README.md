@@ -99,3 +99,12 @@ POST-запрос возвращает историю изменения с фи
 }
 ```
 
+
+
+Пример работы websocket:
+
+https://user-images.githubusercontent.com/94145619/178987936-8a4e03e3-3e99-41fe-bb56-e1a45a6447b5.MP4
+
+
+
+
