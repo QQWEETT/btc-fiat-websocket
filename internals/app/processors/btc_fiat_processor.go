@@ -13,7 +13,6 @@ type BTCFiatProcessor struct {
 var Chan = make(chan float64)
 var Chan2 = make(chan bool, 1)
 var Chan3 = make(chan []models.BTCFiat)
-var Chan4 = make(chan models.Fiat)
 
 
 
