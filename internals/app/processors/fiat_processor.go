@@ -17,7 +17,7 @@ func NewFiatProcessor(storage *db.FiatStorage) *FiatProcessor {
 
 func (processor *FiatProcessor) CreateFiat(fiat models.Fiat) error {
 
-	return processor.storage.CreateFiat(fiat, Chan4)
+	return processor.storage.CreateFiat(fiat)
 }
 
 func (processor *FiatProcessor) ListFiat(filter models.Filter) ([]models.ValCurs, error) {
