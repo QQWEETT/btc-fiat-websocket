@@ -32,10 +32,9 @@ func (storage *FiatStorage) GetFiatLast() []models.ValCurs {
 	return result
 }
 
-func (storage *FiatStorage) CreateFiat(fiat models.Fiat, c chan models.Fiat) error {
+func (storage *FiatStorage) CreateFiat(fiat models.Fiat) error {
 	t := time.Now()
 	date := t.Format("2006-01-02")
-	c <- fiat
 	for i := 0; i < len(fiat.Valute); i++ {
 
 		query := "INSERT INTO fiat(date, code, value) VALUES ($1,$2, $3)"
